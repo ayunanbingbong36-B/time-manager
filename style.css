@@ -1,0 +1,115 @@
+
+/* GENERAL DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #090909;
+    color: #ff8c00;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* MAIN TITLE */
+h1 {
+    color: #ff8c00;
+    text-shadow: 0 0 12px #ff8c00;
+}
+
+h2 {
+    color: #ffb347;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #ff8c00;
+}
+
+p {
+    color: white;
+}
+
+/* DIGITAL CLOCK */
+#clock {
+    font-size: 40px;
+    border: 1px solid #ff8c00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff8c0044;
+    color: #ff8c00;
+}
+
+/* SCHEDULE */
+#schedule {
+    background: #141414;
+    border: 1px solid #ff8c00;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 12px #ff8c0033;
+}
+
+/* BUTTONS */
+button {
+    background: #ff8c00;
+    color: #090909;
+    border: none;
+    padding: 10px 14px;
+    margin: 5px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    background: #ffc266;
+    transform: scale(0.96);
+}
+
+/* SUBJECT LIST */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #202020;
+    border-left: 4px solid #ff8c00;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    color: white;
+}
+
+/* INPUT */
+input {
+    background: #202020;
+    color: white;
+    border: 1px solid #ff8c00;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: monospace;
+    width: 100%;
+    max-width: 300px;
+    margin: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    #clock {
+        font-size: 30px;
+    }
+
+    button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+}

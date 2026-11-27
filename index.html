@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TIME MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff8c00">
+</head>
+<body>
+
+    <h1>MY TIME MANAGER</h1>
+    <p>Welcome to your personal dashboard!</p>
+
+    <h2>Digital Clock</h2>
+    <h1 id="clock">00:00:00</h1>
+
+    <h2>Weekly Class Schedule</h2>
+
+    <div id="schedule">
+        <button onclick="showDay('Monday')">Monday</button>
+        <button onclick="showDay('Tuesday')">Tuesday</button>
+        <button onclick="showDay('Wednesday')">Wednesday</button>
+        <button onclick="showDay('Thursday')">Thursday</button>
+        <button onclick="showDay('Friday')">Friday</button>
+
+        <h3 id="dayTitle">Monday</h3>
+
+        <ul id="subjectList"></ul>
+
+        <h3>Add New Subject</h3>
+
+        <input type="text" id="subjectInput" placeholder="Subject name">
+
+        <button onclick="addSubject()">ADD SUBJECT</button>
+
+    </div>
+    <!-- DITO MO ILALAGAY ANG ASSIGNMENT TRACKER -->
+
+    <section id="assignmentTracker">
+        <h2>Assignment Tracker</h2>
+        <p>Manage your school activities</p>
+
+        <input type="text" id="assignmentName"
+        placeholder="Assignment name">
+
+        <input type="text" id="assignmentSubject"
+        placeholder="Subject">
+
+        <label for="assignmentDeadline">Deadline:</label>
+        <input type="date" id="assignmentDeadline">
+
+        <button onclick="addAssignment()">
+            ADD ASSIGNMENT
+        </button>
+
+        <h3>My Assignments</h3>
+        <ul id="assignmentList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("App is ready!"))
+            .catch(error => console.log("Error:", error));
+    });
+}
+</script>
+
+</body>
+</html>

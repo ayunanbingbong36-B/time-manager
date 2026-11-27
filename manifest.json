@@ -1,0 +1,8 @@
+{
+  "name": "MY TIME MANAGER",
+  "short_name": "Time Manager",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#ff8c00"
+}
